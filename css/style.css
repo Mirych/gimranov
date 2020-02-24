@@ -132,7 +132,38 @@ button:focus {
 
 /* === picture === */
 
+.picture {
+    margin-top: 23px;
+    height: 948px;
+    background: url(../img/section-picture.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 /* === /picture === */
+
+/* === catalog === */
+
+.title {
+    padding-top: 120px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 44px;
+    text-align: center;
+}
+.catalog-wrap {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog__block-title {
+    padding: 20px 0 4px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.catalog__block-text {
+    color: #637381;
+}
+/* === /catalog === */
 
 
 /* === MOBILE === */
@@ -203,6 +234,13 @@ button:focus {
         margin-bottom: 156px;
         font-size: 28px;
     }
+    .advantages {
+        padding-bottom: 50px;
+    }
+    .advantages__descr {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
     .advantages__title {
         margin-top: 36px;
         font-size: 20px;
@@ -210,6 +248,10 @@ button:focus {
     .advantages__item {
         flex-basis: 100%;
         margin-top: 36px;
+    }
+    .picture {
+        margin: 0;
+        height: 320px;
     }
 }
 /* === /MOBILE === */
