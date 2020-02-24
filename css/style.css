@@ -103,6 +103,31 @@ button:focus {
 
 /* === advantages === */
 
+.advantages {
+    min-height: 750px;
+    background: linear-gradient(180deg, #F0EDE2 28.86%, #D6CDAC 100%);
+    margin: auto 0;
+    text-align: center;
+}
+.advantages__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantages__title {
+    margin-top: 160px;
+    margin-bottom: 24px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 44px;
+}
+.advantages__descr {
+    margin-bottom: 80px;
+    font-weight: 500;
+}
+.advantages__item-text {
+    padding-top: 34px;
+    font-weight: 500;
+}
 /* === /advantages === */
 
 /* === picture === */
@@ -120,6 +145,10 @@ button:focus {
 @media (min-width: 768px) and (max-width: 959px) {
     .container {
         max-width: 750px;
+    }
+    .advantages__item {
+        flex-basis: 50%;
+        margin-top: 36px;
     }
 }
 
@@ -173,6 +202,14 @@ button:focus {
     .hero__title {
         margin-bottom: 156px;
         font-size: 28px;
+    }
+    .advantages__title {
+        margin-top: 36px;
+        font-size: 20px;
+    }
+    .advantages__item {
+        flex-basis: 100%;
+        margin-top: 36px;
     }
 }
 /* === /MOBILE === */
