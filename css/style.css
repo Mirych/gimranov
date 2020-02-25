@@ -12,6 +12,7 @@
 .container {
     max-width: 1080px;
     margin: auto;
+    padding: 0 10px;
     overflow-x: hidden;
 }
 a, button {
@@ -43,11 +44,10 @@ button:focus {
     font-size: 24px;;
     font-weight: bold;
 }
-.logo__description {
-    display: block;
+.logo__description,
+.description__mobile {
     font-size: 16px;
 }
-.description__mobile,
 .navbar__button {
     display: none;
 }
@@ -59,6 +59,9 @@ button:focus {
     display: block;
     margin-right: 24px;
 }
+.menu__item:last-child {
+    margin: 0;
+}
 .menu__item a {
     color: #ffffff;
     font-weight: 600;
@@ -67,6 +70,7 @@ button:focus {
 .menu__call {
     display: flex;
     align-items: center;
+    min-width: 225px;
     color: #ffffff;
     font-weight: 600;
     padding: 12px 16px;
@@ -77,6 +81,8 @@ button:focus {
 }
 .menu__call-img {
     margin-left: 10px;
+    height: 20px;
+    width: 20px;
 }
 .hero {
     padding-top: 193px;
@@ -99,12 +105,15 @@ button:focus {
     color: #ffffff;
     text-decoration: underline;
 }
+.hero__links a:last-child {
+    margin: 0;
+}
 /* === /header === */
 
 /* === advantages === */
 
 .advantages {
-    min-height: 750px;
+    padding: 160px 0 160px 0;
     background: linear-gradient(180deg, #F0EDE2 28.86%, #D6CDAC 100%);
     margin: auto 0;
     text-align: center;
@@ -115,7 +124,6 @@ button:focus {
     justify-content: space-between;
 }
 .advantages__title {
-    margin-top: 160px;
     margin-bottom: 24px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 44px;
@@ -125,7 +133,7 @@ button:focus {
     font-weight: 500;
 }
 .advantages__item-text {
-    padding-top: 34px;
+    margin-top: 34px;
     font-weight: 500;
 }
 /* === /advantages === */
@@ -144,7 +152,7 @@ button:focus {
 /* === catalog === */
 
 .title {
-    padding-top: 120px;
+    margin-top: 120px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 44px;
     text-align: center;
@@ -214,17 +222,19 @@ button:focus {
         background-color: #000000;
         border-radius: 6px;
     }
+    .navbar__button-line:first-child {
+        margin: 0;
+    }
     .logo__text {
         font-size: 14px;
         color: black;
     }
-    .description__mobile {
-        display: block;
+    .logo__description {
         font-size: 12px;
         color: #919EAB;
     }
     .navbar__menu,
-    .logo__description {
+    .description__mobile {
         display: none;
     }
     .hero {
@@ -235,14 +245,13 @@ button:focus {
         font-size: 28px;
     }
     .advantages {
-        padding-bottom: 50px;
+        padding: 48px 0 60px;
     }
     .advantages__descr {
         padding: 0 10px;
         margin-bottom: 30px;
     }
     .advantages__title {
-        margin-top: 36px;
         font-size: 20px;
     }
     .advantages__item {
