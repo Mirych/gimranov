@@ -196,6 +196,74 @@ button:focus {
 }
 /* === /catalog === */
 
+/* === feedback === */
+.feedback {
+    position: relative;
+    background-color: #EEC200;
+}
+.feedback h2 {
+    color: #ffffff;
+}
+.brush-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.brush-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.form-wrap {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.form__group {
+    margin-bottom: 32px;
+}
+.form__label {
+    margin-bottom: 8px;
+    display: block;
+    color: #ffffff;
+}
+.form__input,
+.form__text {
+    height: 48px;
+    width: 600px;
+    padding-left: 14px;
+    border-radius: 4px;
+    background: #F4F6F8;
+    border: none;
+    outline: none;
+}
+.form__text {
+    padding-top: 14px;
+    height: 96px;
+    resize: none;
+}
+.form__input::placeholder {
+    color: #919EAB;
+    opacity: 1; /* Mozilla */
+}
+.form__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #919EAB;
+}
+.form__input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #919EAB;
+}
+.btn-offer {
+    float: right;
+    padding: 12px;
+    color: #ffffff;
+    background: #6772E5;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+}
+/* === /feedback === */
 
 /* === MOBILE === */
 @media (min-width: 992px) and (max-width: 1079px) {
@@ -294,6 +362,25 @@ button:focus {
     .catalog-wrap {
         margin-top: 24px;
         flex-direction: column;
+    }
+    .form__input,
+    .form__text {
+        width: 288px;
+    }
+    .title {
+        position: relative;
+        z-index: 99;
+    }
+    .brush-right {
+        height: 12%;
+    }
+    .brush-left {
+        height: 5%;
+        width: 50%;
+    }
+    .btn-offer {
+        float: none;
+        width: 100%;
     }
 }
 /* === /MOBILE === */
