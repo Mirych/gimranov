@@ -292,10 +292,9 @@ button:focus {
 .next {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    right: -70%;
-    height: 75px;
-    width: 75px;
+    top: 44%;
+    right: 6%;
+    cursor: pointer;
 }
 /* === /slider === */
 
@@ -305,7 +304,11 @@ button:focus {
         max-width: 960px;
     }
 }
-
+@media (max-width: 1000px) {
+    .next {
+        display: none;
+    }
+}
 @media (min-width: 768px) and (max-width: 959px) {
     .container {
         max-width: 750px;
@@ -326,6 +329,7 @@ button:focus {
     .navbar{
         padding: 0;
         position: fixed;
+        z-index: 9999;
         width: 100%;
         background-color: #ffffff;
     }
