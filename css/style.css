@@ -261,9 +261,43 @@ button:focus {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
+    border: none;
     outline: none;
 }
 /* === /feedback === */
+
+/* === slider === */
+.slider-wrap {
+    position: relative;
+    margin-top: 60px;
+}
+.owl-item {
+    position: relative;
+    max-height: 750px;
+}
+.owl-item::before {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1.2s;
+}
+.active::before {
+    background: none !important;
+}
+.next {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: -70%;
+    height: 75px;
+    width: 75px;
+}
+/* === /slider === */
 
 /* === MOBILE === */
 @media (min-width: 992px) and (max-width: 1079px) {
@@ -381,6 +415,9 @@ button:focus {
     .btn-offer {
         float: none;
         width: 100%;
+    }
+    .slider-wrap {
+        margin-top: 24px;
     }
 }
 /* === /MOBILE === */
