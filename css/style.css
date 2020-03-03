@@ -273,28 +273,63 @@ button:focus {
 }
 .owl-item {
     position: relative;
-    max-height: 750px;
 }
 .owl-item::before {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
     z-index: 5;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: 1.2s;
+    transition: 0.3s;
 }
-.active::before {
-    background: none !important;
+.center::before {
+    background: none;
 }
-.next {
+.item {
+    width: 960px;
+    height: 720px;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.owl-nav {
     position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 68px;
+}
+.owl-next,
+.owl-prev {
+    float: right;
+    height: 56px;
+    width: 56px;
+    background: url(../img/next-button.svg) no-repeat;
+    background-size: cover;
+    border: none;
+}
+.owl-prev {
+    float: left; /* правильно ли так делать? */
+    transform: rotate(180deg);
+}
+.owl-prev span,
+.owl-next span {
+    display: none;
+}
+.slider-btn {
+    position: absolute;
+    padding: 18px;
     z-index: 10;
     top: 44%;
     right: 6%;
     cursor: pointer;
+    border: 2px solid white;
+    border-radius: 100px;
 }
 /* === /slider === */
 
@@ -302,11 +337,6 @@ button:focus {
 @media (min-width: 992px) and (max-width: 1079px) {
     .container {
         max-width: 960px;
-    }
-}
-@media (max-width: 1000px) {
-    .next {
-        display: none;
     }
 }
 @media (min-width: 768px) and (max-width: 959px) {
