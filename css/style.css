@@ -332,7 +332,53 @@ button:focus {
     border-radius: 100px;
 }
 /* === /slider === */
+/* === about === */
+.about {
+    padding-bottom: 120px;
+}
+.about-wrap {
+    display: flex;
+}
+.about__photo img {
+    align-self: flex-start;
+}
+.about__content {
+    padding: 80px 0 0 40px;
+}
+.about__content-title {
+    position: relative;
+    margin-left: -100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #212B36;
+}
+.about__content-title span {
+    position: relative;
+    margin-left: -30px;
+    padding-right: 12px;
+    font-size: 36px;
+}
+.about__content-name {
+    padding: 40px 0 4px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.about__content-descr {
+    padding-bottom: 40px;
+    font-weight: 500;
+    color: #637381;
+}
+.about__content-text {
+    font-weight: 500;
+    color: #212B36;
+    line-height: 1.7;
+}
+.triangle-btn {
 
+
+}
+/* === /about === */
 /* === MOBILE === */
 @media (min-width: 992px) and (max-width: 1079px) {
     .container {
