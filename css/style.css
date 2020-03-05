@@ -340,7 +340,7 @@ button:focus {
     display: flex;
 }
 .about__photo img {
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 .about__content {
     padding: 80px 0 0 40px;
@@ -374,9 +374,30 @@ button:focus {
     color: #212B36;
     line-height: 1.7;
 }
-.triangle-btn {
-
-
+.about__btn {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.about__btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #DFE3E8;
+    border-radius: 50%;
+}
+.about__btn-icon img {
+    height: 10px;
+    width: 12px;
+}
+.about__btn-text {
+    margin-left: 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6772E5;
 }
 /* === /about === */
 /* === MOBILE === */
@@ -392,6 +413,16 @@ button:focus {
     .advantages__item {
         flex-basis: 50%;
         margin-top: 36px;
+    }
+    .about-wrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__photo {
+        margin: auto;
+    }
+    .about__content-title  {
+        margin: 0;
     }
 }
 
