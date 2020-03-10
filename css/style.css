@@ -533,7 +533,8 @@ button:focus {
     font-weight: bold;
     color: white;
 }
-.contacts__form .form__input, .form__text {
+.contacts__form .form__input, 
+.contacts__form .form__text {
     width: 492px;
 }
 .contacts__form .form__group {
@@ -542,8 +543,33 @@ button:focus {
 .contacts__form .btn-offer {
     width: 100%;
 }
-.contacts__form .brush-right {
+/* .contacts__form .brush-right {
     
+} */
+.contacts__footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.contacts__footer-title {
+    position: relative;
+    padding-right: 24px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.contacts__footer-title:after {
+    position: absolute;
+    margin: 0 24px;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #454F5B;
+}
+.contacts__footer-text {
+    padding-left: 24px;
+    font-size: 12px;
 }
 /* === /contacts === */
 /* === MOBILE === */
