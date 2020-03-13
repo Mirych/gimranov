@@ -139,6 +139,9 @@ button:focus {
     margin-top: 34px;
     font-weight: 500;
 }
+.advantages__item-img:hover {
+    background-image: url(../img/adv1-hover.svg);
+}
 /* === /advantages === */
 
 /* === picture === */
@@ -485,6 +488,7 @@ button:focus {
     display: flex;
 }
 .contacts__blocks {
+    margin-right: 80px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -509,14 +513,13 @@ button:focus {
     font-weight: 500;
 }
 .contacts__blocks .hero__links:before {
-    /* content: '';
+    content: '';
     position: absolute;
     height: 1px;
     width: 100%;
-    background-color:rgba(255, 255, 255, 0.4); */
+    background-color:rgba(255, 255, 255, 0.4);
 }
 .contacts__blocks .hero__links {
-    padding-top: 24px;
     justify-content: left;
 }
 .contacts__form {
@@ -689,7 +692,9 @@ button:focus {
         flex-direction: column;
     }
     .form__input,
-    .form__text {
+    .form__text,
+    .contacts__form .form__input,
+    .contacts__form .form__text {
         width: 288px;
     }
     .brush-right {
@@ -711,6 +716,7 @@ button:focus {
     }
     .about__mobile-title {
         padding-bottom: 20px;
+        display: block;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 20px;
         text-align: center;
@@ -747,6 +753,18 @@ button:focus {
     }
     .offer__delivery {
         margin: 24px 0 40px 0;
+    }
+    .contacts {
+        padding: 48px 0 24px 0;
+    }
+    .contacts-wrap {
+        flex-direction: column;
+    }
+    .contacts__blocks {
+        margin: 0;
+    }
+    .contacts__blocks .title {
+        margin-top: 0;
     }
 }
 /* === /MOBILE === */
