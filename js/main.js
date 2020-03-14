@@ -10,8 +10,18 @@ $('.owl-carousel').owlCarousel({
         0:{
             dots:true
         },
-        1200:{
+        1000:{
             dots:false
         },               
     }
 });
+
+    $(document).ready(() => {
+      $('.catalog-wrap').masonry({
+        // options
+        itemSelector: ".catalog__block", 
+        columnWidth: ".grid-sizer", 
+        percentPosition: true, 
+        horizontalOrder: true
+      });
+    });
